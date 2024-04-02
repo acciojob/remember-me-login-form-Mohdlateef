@@ -15,7 +15,7 @@ submitbtn.addEventListener("click",()=>{
 	pas:password.value,
 	}
 	
-	alert(`Logged in as ${obj.usetex}`)
+
 	
 	if(checkbox.checked)
 	{
@@ -24,4 +24,5 @@ submitbtn.addEventListener("click",()=>{
 	else{
 		sessionStorage.removeItem('checkboxState');
 	}
+		alert(`Login as ${obj.usetex}`)
 })
