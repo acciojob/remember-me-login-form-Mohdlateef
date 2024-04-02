@@ -26,3 +26,17 @@ submitbtn.addEventListener("click",()=>{
 	}
 		alert(`Login as ${obj.usetex}`)
 })
+let data=JSON.parse(sessionStorage.getItem('checkboxState'))
+// alert(data)
+					if(data!="")
+{
+	let loginbtn=document.createElement("button");
+	// loginbtn.value="abc"
+	loginbtn.id="existing";
+	submitbtn.insertAdjacentElement("afterEnd",loginbtn)
+	loginbtn.innerText=`login as ${data.usetex}`
+	loginbtn.addEventListener("click",()=>{
+		alert(`login as ${data.usetex}`)
+	})
+	// alert(data.usetex)
+}
